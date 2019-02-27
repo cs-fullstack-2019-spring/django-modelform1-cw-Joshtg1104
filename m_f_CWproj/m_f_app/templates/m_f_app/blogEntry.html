@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--html for blog entries that have already been made but is not functioning the way I would like-->
+<h1>Blog Entries</h1>
+
+{% for post in posts %}
+
+{{ title.as_p }}
+{{ text.as_p }}
+
+{% endfor %}
+
+<a href="{% url 'index' %}">Enter New Post</a>
+
+</body>
+</html>

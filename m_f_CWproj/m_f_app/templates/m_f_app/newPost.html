@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--html that allows users to enter new posts-->
+<h1>New Blog Post</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ posts.as_p }}
+    <input type="submit" value="Post">
+</form>
+
+
+</body>
+</html>
